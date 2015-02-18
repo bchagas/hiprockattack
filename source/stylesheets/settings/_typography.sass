@@ -4,11 +4,19 @@ body
   color: white
   font:
     family: $noticia-text
-    size: em(16)
+    size: rem(16)
     weight: 400
-  letter-spacing: em(10)
-  line-height: em(12)
+  letter-spacing: rem(10)
+  line-height: rem(12)
 
-@for $i from 1 through 6
-  h#{$i}
-    font-size: em(30 - ($i * 5))
+  @for $i from 1 through 6
+    h#{$i}
+      font-size: rem(30 - ($i * 5))
+
++media($small)
+  html body
+    font-size: rem(22)
+
++media($medium)
+  html body
+    font-size: rem(22)
