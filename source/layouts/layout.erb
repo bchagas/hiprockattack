@@ -15,13 +15,8 @@
   <body class="<%= page_classes %>">
     <header>
       <div class="content">
-        <nav>
-          <ul>
-            <% %w(agenda contact).each do |item| %>
-              <li><%= link_to item, "/#{item}.html" %></li>
-            <% end %>
-          </ul>
-        </nav>
+        <h1><span>Hip Rock Attack</span></h1>
+        <h2><span>RVilches x Big B</span></h2>
       </div>
     </header>
     <%= yield %>

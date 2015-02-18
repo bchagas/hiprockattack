@@ -12,6 +12,12 @@ body
   @for $i from 1 through 6
     h#{$i}
       font-size: rem(30 - ($i * 5))
+      color: black
+      text-align: center
+
+      > span
+        background: white
+        padding: 8px 10px 10px 20px
 
 +media($small)
   html body
