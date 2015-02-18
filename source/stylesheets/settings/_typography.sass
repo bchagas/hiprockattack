@@ -1,0 +1,14 @@
+$noticia-text: 'Noticia Text', serif
+
+body
+  color: white
+  font:
+    family: $noticia-text
+    size: em(16)
+    weight: 400
+  letter-spacing: em(10)
+  line-height: em(12)
+
+@for $i from 1 through 6
+  h#{$i}
+    font-size: em(30 - ($i * 5))
