@@ -12,7 +12,9 @@ title: Hip Rock Attack, party by RVilches x Big B
           <th>Date</th>
           <th>Venue</th>
           <th class="location">Location</th>
-          <th class="rsvp">Tickets</th>
+          <% unless Time.parse("2015-02-28") > Time.now.strftime("%d/%b") %>
+            <th class="rsvp">Tickets</th>
+          <% end %>
         </tr>
       </thead>
 
@@ -21,7 +23,9 @@ title: Hip Rock Attack, party by RVilches x Big B
           <td>Jan/28</td>
           <td>Rock &amp; Breja Bar</td>
           <td class="location">SP/Brazil, Rua Euclides Pacheo, 495</td>
-          <td class="rsvp"><%= link_to "RSVP", "" %></td>
+          <% unless Time.parse("2015-02-28") > Time.now.strftime("%d/%b") %>
+            <td class="rsvp"><%= link_to "RSVP", "" %></td>
+          <% end %>
         </tr>
       </tbody>
     </table>
