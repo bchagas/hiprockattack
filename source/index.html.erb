@@ -12,19 +12,28 @@ title: Hip Rock Attack, party by RVilches x Big B
           <th>Date</th>
           <th>Venue</th>
           <th class="location">Location</th>
-          <% unless Time.parse("2015-02-28") > Time.now.strftime("%d/%b") %>
-            <th class="rsvp">Tickets</th>
-          <% end %>
+          <th class="rsvp">Tickets</th>
         </tr>
       </thead>
 
       <tbody>
         <tr>
+          <td>Jan/21</td>
+          <td>Rock &amp; Breja Bar</td>
+          <td class="location">SP/Brazil, Rua Euclides Pacheo, 495</td>
+          <td class="rsvp">
+            <% unless Time.parse("2015-02-21").strftime("%y-%m-%d") <  Time.now.strftime("%y-%m-%d") %>
+              <%= link_to "RSVP", "" %>
+            <% end %>
+          </td>
+        </tr>
+
+        <tr>
           <td>Jan/28</td>
           <td>Rock &amp; Breja Bar</td>
           <td class="location">SP/Brazil, Rua Euclides Pacheo, 495</td>
-          <% unless Time.parse("2015-02-28") > Time.now.strftime("%d/%b") %>
-            <td class="rsvp"><%= link_to "RSVP", "" %></td>
+          <% unless Time.parse("2015-02-28").strftime("%y-%m-%d") <  Time.now.strftime("%y-%m-%d")  %>
+            <td class="rsvp"><%= link_to "RSVP", "http://hiprockattack-01.eventbrite.com" %></td>
           <% end %>
         </tr>
       </tbody>
