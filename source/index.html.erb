@@ -39,6 +39,18 @@ title: HipRock Attack, party by RVilches x Big B
               <% end %>
             </td>
         </tr>
+
+        <tr>
+          <td>Mar/28</td>
+          <td>Rock &amp; Breja Bar</td>
+          <td class="location">SP/Brazil, Rua Euclides Pacheo, 495</td>
+            <td class="rsvp">
+              <% unless Time.parse("2015-03-28").strftime("%y-%m-%d") <  Time.now.strftime("%y-%m-%d")  %>
+                <%= link_to "RSVP", "http://hiprockattack-02.eventbrite.com" %> |
+                <%= link_to "FB Event", "https://www.facebook.com/events/1072261416124256" %>
+              <% end %>
+            </td>
+        </tr>
       </tbody>
     </table>
   </div>
